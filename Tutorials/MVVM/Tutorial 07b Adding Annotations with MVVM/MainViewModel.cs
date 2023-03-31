@@ -41,7 +41,8 @@ namespace SciChart.Mvvm.Tutorial
                     Annotations.Add(new InfoAnnotationViewModel
                     {
                         X1 = _lineData.XValues.Last(),
-                        Y1 = 0.0
+                        Y1 = 0.0,
+                        AnnotationCanvas = Charting.Visuals.Annotations.AnnotationCanvas.BelowChart
                     });
                 }
                 i++;

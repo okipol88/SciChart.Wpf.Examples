@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Company>SciChart Ltd</Company>
 		<Copyright>Copyright © SciChart Ltd 2011-2023</Copyright>
-		<TargetFrameworks>net462</TargetFrameworks>
+		<TargetFrameworks>net452</TargetFrameworks>
 		<UseWPF>True</UseWPF>
 		<OutputType>WinExe</OutputType>
 		<OutputPath>bin\$(Configuration)</OutputPath>
@@ -12,7 +12,7 @@
 		<LangVersion>Latest</LangVersion>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+	<ItemGroup Condition="'$(TargetFramework)' == 'net452'">
 		<Reference Include="System" />
 		<Reference Include="System.Data" />
 		<Reference Include="System.Drawing" />
@@ -33,7 +33,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="SciChart" Version="*" />
+	  <PackageReference Include="SciChart" Version="6.6.0.26505" />
 	</ItemGroup>
 
 </Project>
